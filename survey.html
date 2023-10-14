@@ -1,46 +1,66 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <title>Survey Form</title>
 </head>
 <body>
+    <h1>Survey Form</h1>
 
-<h1>Survey Form</h1>
+    <form>
+        <h2>Which of the following social media platforms do you use?</h2>
+        <label>
+            <input type="checkbox" name="social_media[]" value="facebook"> Facebook
+        </label><br>
+        <label>
+            <input type="checkbox" name="social_media[]" value="twitter"> Twitter
+        </label><br>
+        <label>
+            <input type="checkbox" name="social_media[]" value="instagram"> Instagram
+        </label><br>
+        <label>
+            <input type="checkbox" name="social_media[]" value="linkedin"> LinkedIn
+        </label><br><br>
+        <label>
+            <input type="checkbox" name="social_media[]" value="Snapchat"> Snapchat
+        </label><br>
+        <label>
+            <input type="checkbox" name="social_media[]" value="Tiktok"> Tiktok
+        </label><br>
+        <label>
+            <input type="checkbox" name="social_media[]" value="Groupme"> Groupme
+        </label><br>
+        <label>
+            <input type="checkbox" name="social_media[]" value="Teamlive"> Teamlive
+        </label><br>
+        <label>
+            <input type="checkbox" name="social_media[]" value="Tinder"> Tinder
+        </label><br>
+        <label>
+            <input type="checkbox" name="social_media[]" value="Reddit"> Reddit
+        </label><br>
 
-  <h2>Which of the following social media platforms do you use?</h2>
-    <label>
-        <input type="checkbox" name="social_media[]" value="facebook"> Facebook
-    </label><br>
-    <label>
-        <input type="checkbox" name="social_media[]" value="twitter"> Twitter
-    </label><br>
-    <label>
-        <input type="checkbox" name="social_media[]" value="instagram"> Instagram
-    </label><br>
-    <label>
-        <input type="checkbox" name="social_media[]" value="linkedin"> LinkedIn
-    </label><br><br>
-    <label>
-        <input type="checkbox" name="social_media[]" value="Snapchat"> Snapchat
-    </label><br>
-    <label>
-        <input type="checkbox" name="social_media[]" value="Tiktok"> Tiktok
-    </label><br>
-    <label>
-        <input type="checkbox" name="social_media[]" value="Groupme"> Groupme
-    </label><br>
-    <label>
-        <input type="checkbox" name="social_media[]" value="Teamlive"> Teamlive
-    </label><br>
-    <label>
-        <input type="checkbox" name="social_media[]" value="Tinder"> Tinder
-    </label><br>
-    <label>
-        <input type="checkbox" name="social_media[]" value="Reddit"> Reddit
-    </label><br>
+        <h2>Email:</h2>
+        <input type="email" name="email" required><br>
 
-    <input type="submit" value="Submit">
-</form>
+        <h2>Text Input:</h2>
+        <input type="text" name="text_input"><br>
 
+        <h2>Date Input:</h2>
+        <input type="date" name="date_input"><br>
+
+        <h2>Choose an option from the drop-down:</h2>
+        <select name="dropdown">
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+        </select><br>
+
+        <h2>Do you agree to our terms?</h2>
+        <label>
+            <input type="checkbox" name="terms" value="agreed"> I agree
+        </label><br>
+
+        <input type="submit" value="Submit">
+    </form>
 </body>
 </html>
